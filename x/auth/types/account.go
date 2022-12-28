@@ -119,6 +119,17 @@ func (acc *BaseAccount) SetSequence(seq uint64) error {
 	return nil
 }
 
+// GetSequence - Implements sdk.AccountI.
+func (acc BaseAccount) GetSecondarySequence(id string) uint64 {
+	return acc.SecondarySequence[id]
+}
+
+// SetSequence - Implements sdk.AccountI.
+func (acc *BaseAccount) SetSecondarySequence(id string, seq uint64) error {
+	acc.SecondarySequence[id] = seq
+	return nil
+}
+
 // Validate checks for errors on the account fields
 func (acc BaseAccount) Validate() error {
 	if acc.Address == "" || acc.PubKey == nil {
@@ -319,6 +330,9 @@ type AccountI interface {
 
 	GetSequence() uint64
 	SetSequence(uint64) error
+
+	GetSecondarySequence(string) uint64
+	SetSecondarySequence(string, uint64) error
 
 	// Ensure that account implements stringer
 	String() string
