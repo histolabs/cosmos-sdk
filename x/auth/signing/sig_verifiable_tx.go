@@ -14,6 +14,7 @@ type SigVerifiableTx interface {
 	GetSigners() []types.AccAddress
 	GetPubKeys() ([]cryptotypes.PubKey, error) // If signer already has pubkey in context, this list will have nil in its place
 	GetSignaturesV2() ([]signing.SignatureV2, error)
+	GetSecondaryChainID() string
 }
 
 // Tx defines a transaction interface that supports all standard message, signature

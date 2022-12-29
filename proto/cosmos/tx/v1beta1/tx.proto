@@ -149,6 +149,10 @@ message AuthInfo {
   //
   // Since: cosmos-sdk 0.46
   Tip tip = 3;
+
+  // secondary_chain_id is only filled if this transaction is a non-native
+  // transaction.
+  string secondary_chain_id = 4;
 }
 
 // SignerInfo describes the public key and signing mode of a single top-level

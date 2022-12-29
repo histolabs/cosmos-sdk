@@ -165,6 +165,10 @@ func (tx StdTx) GetSigners() []sdk.AccAddress {
 // GetMemo returns the memo
 func (tx StdTx) GetMemo() string { return tx.Memo }
 
+// GetMemo returns the zero value of a string, because secondary chain-ids are
+// not supported for legacy transactions.
+func (tx StdTx) GetSecondaryChainID() string { return "" }
+
 // GetTimeoutHeight returns the transaction's timeout height (if set).
 func (tx StdTx) GetTimeoutHeight() uint64 {
 	return tx.TimeoutHeight
