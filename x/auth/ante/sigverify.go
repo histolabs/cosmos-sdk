@@ -294,6 +294,11 @@ func (svd SigVerificationDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simul
 		var accNum uint64
 		if !genesis {
 			accNum = acc.GetAccountNumber()
+			// we don't support account numbers for other chains, as its
+			// impossible to prune state.
+			if secondaryChainID != "" {
+				accNum = 0
+			}
 		}
 		signerData := authsigning.SignerData{
 			Address:       acc.GetAddress().String(),
