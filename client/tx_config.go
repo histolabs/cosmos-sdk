@@ -46,6 +46,7 @@ type (
 		SetTip(tip *tx.Tip)
 		SetTimeoutHeight(height uint64)
 		SetFeeGranter(feeGranter sdk.AccAddress)
+		SetSecondaryChainID(id string)
 		AddAuxSignerData(tx.AuxSignerData) error
 	}
 )

@@ -66,6 +66,12 @@ func (s *StdTxBuilder) SetMemo(memo string) {
 	s.Memo = memo
 }
 
+// GetSEcondaryChainID returns the secondary chain id in the authentication
+// info. This is the zero value for native transactions.
+func (s *StdTxBuilder) SetSecondaryChainID(id string) {
+	panic("secondary chain-ids not supported by legacy tx builder")
+}
+
 // SetTimeoutHeight sets the transaction's height timeout.
 func (s *StdTxBuilder) SetTimeoutHeight(height uint64) {
 	s.TimeoutHeight = height

@@ -1875,7 +1875,6 @@ func TestSnapshotWithPruning(t *testing.T) {
 				s.Hash = nil
 				s.Metadata = nil
 			}
-			fmt.Println(resp)
 			assert.Equal(t, abci.ResponseListSnapshots{Snapshots: tc.expectedSnapshots}, resp)
 
 			// Validate that heights were pruned correctly by querying the state at the last height that should be present relative to latest

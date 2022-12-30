@@ -312,6 +312,12 @@ func (w *wrapper) SetSignatures(signatures ...signing.SignatureV2) error {
 	return nil
 }
 
+// SetSEcondaryChainID sets the secondary chain id in the authentication info.
+// This is the zero value for native transactions.
+func (w *wrapper) SetSecondaryChainID(id string) {
+	w.tx.AuthInfo.SecondaryChainId = id
+}
+
 func (w *wrapper) setSignerInfos(infos []*tx.SignerInfo) {
 	w.tx.AuthInfo.SignerInfos = infos
 	// set authInfoBz to nil because the cached authInfoBz no longer matches tx.AuthInfo

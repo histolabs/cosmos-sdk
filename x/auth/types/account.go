@@ -126,6 +126,10 @@ func (acc BaseAccount) GetSecondarySequence(id string) uint64 {
 
 // SetSequence - Implements sdk.AccountI.
 func (acc *BaseAccount) SetSecondarySequence(id string, seq uint64) error {
+	// todo: properly fix the unmarshalling so that we don't have to perform this check
+	if acc.SecondarySequence == nil {
+		acc.SecondarySequence = make(map[string]uint64)
+	}
 	acc.SecondarySequence[id] = seq
 	return nil
 }
