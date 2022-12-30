@@ -19,6 +19,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 )
 
 const (
@@ -661,11 +662,6 @@ func (app *BaseApp) runTx(mode runTxMode, txBytes []byte) (gInfo sdk.GasInfo, re
 		return sdk.GasInfo{}, nil, nil, 0, err
 	}
 
-	msgs := tx.GetMsgs()
-	if err := validateBasicTxMsgs(msgs); err != nil {
-		return sdk.GasInfo{}, nil, nil, 0, err
-	}
-
 	if app.anteHandler != nil {
 		var (
 			anteCtx sdk.Context
@@ -705,6 +701,21 @@ func (app *BaseApp) runTx(mode runTxMode, txBytes []byte) (gInfo sdk.GasInfo, re
 		priority = ctx.Priority()
 		msCache.Write()
 		anteEvents = events.ToABCIEvents()
+	}
+
+	sigTx, ok := tx.(authsigning.SigVerifiableTx)
+	if !ok {
+		return sdk.GasInfo{}, nil, nil, 0, sdkerrors.Wrap(sdkerrors.ErrTxDecode, "invalid transaction type")
+	}
+
+	// return early if there is a secondary chain-id, as we shouldn't execute any sdk.Msgs
+	if sigTx.GetSecondaryChainID() != "" {
+		return gInfo, &sdk.Result{}, anteEvents, priority, err
+	}
+
+	msgs := tx.GetMsgs()
+	if err := validateBasicTxMsgs(msgs); err != nil {
+		return sdk.GasInfo{}, nil, nil, 0, err
 	}
 
 	// Create a new Context based off of the existing Context with a MultiStore branch
