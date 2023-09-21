@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/address"
 )
 
 type utilsTestSuite struct {

@@ -30,14 +30,14 @@ import (
 	snapshottypes "cosmossdk.io/store/snapshots/types"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/version"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/server/config"
+	"github.com/cosmos/cosmos-sdk/v2/server/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/mempool"
+	"github.com/cosmos/cosmos-sdk/v2/version"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 // ServerContextKey defines the context key used to retrieve a server.Context from

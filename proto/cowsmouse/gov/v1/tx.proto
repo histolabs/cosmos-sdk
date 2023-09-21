@@ -11,7 +11,7 @@ import "cowsmouse/msg/v1/msg.proto";
 import "amino/amino.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/gov/types/v1";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1";
 
 // Msg defines the gov Msg service.
 service Msg {
@@ -57,7 +57,7 @@ message MsgSubmitProposal {
   // initial_deposit is the deposit value that must be paid at proposal submission.
   repeated cowsmouse.base.v1beta1.Coin initial_deposit = 2 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];

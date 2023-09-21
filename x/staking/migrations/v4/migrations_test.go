@@ -9,15 +9,15 @@ import (
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	v4 "github.com/cosmos/cosmos-sdk/x/staking/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	paramtypes "github.com/cosmos/cosmos-sdk/v2/x/params/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking"
+	v4 "github.com/cosmos/cosmos-sdk/v2/x/staking/migrations/v4"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 type mockSubspace struct {

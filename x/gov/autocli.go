@@ -7,7 +7,7 @@ import (
 	govv1 "cosmossdk.io/api/cosmos/gov/v1"
 	govv1beta1 "cosmossdk.io/api/cosmos/gov/v1beta1"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/cosmos/cosmos-sdk/v2/version"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

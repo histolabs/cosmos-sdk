@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/codec/types"
 )
 
 const (

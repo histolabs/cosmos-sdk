@@ -12,14 +12,14 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx/signing"
 )
 
 // Factory defines a client transaction factory that facilitates generating and
@@ -421,7 +421,7 @@ func (f Factory) BuildSimTx(msgs ...sdk.Msg) ([]byte, error) {
 // Note, we should only check for keys in the keybase if we are in simulate and execute mode,
 // e.g. when using --gas=auto.
 // When using --dry-run, we are is simulation mode only and should not check the keybase.
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/11283
+// Ref: https://github.com/cosmos/cosmos-sdk/v2/issues/11283
 func (f Factory) getSimPK() (cryptotypes.PubKey, error) {
 	var (
 		ok bool

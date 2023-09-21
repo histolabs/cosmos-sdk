@@ -12,16 +12,16 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	simcli "github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
+	simcli "github.com/cosmos/cosmos-sdk/v2/x/simulation/client/cli"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // Simulation parameter constants

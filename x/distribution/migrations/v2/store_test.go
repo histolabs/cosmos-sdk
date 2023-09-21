@@ -9,14 +9,14 @@ import (
 
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	v1 "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v1"
-	v2 "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v2"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/address"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/distribution/migrations/v1"
+	v2 "github.com/cosmos/cosmos-sdk/v2/x/distribution/migrations/v2"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/types"
 )
 
 func TestStoreMigration(t *testing.T) {

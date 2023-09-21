@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/client/cli"
 )
 
 func (s *E2ETestSuite) TestCmdProposer() {

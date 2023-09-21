@@ -18,10 +18,10 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/server"
+	servercmtlog "github.com/cosmos/cosmos-sdk/v2/server/log"
+	servertypes "github.com/cosmos/cosmos-sdk/v2/server/types"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 // CometStarter offers a builder-pattern interface to

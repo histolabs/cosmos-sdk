@@ -7,13 +7,13 @@ import (
 
 	"cosmossdk.io/core/header"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/query"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	vestingtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/vesting/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryBalance() {

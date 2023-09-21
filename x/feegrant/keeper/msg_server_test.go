@@ -8,9 +8,9 @@ import (
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/x/feegrant"
 
-	codecaddress "github.com/cosmos/cosmos-sdk/codec/address"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codecaddress "github.com/cosmos/cosmos-sdk/v2/codec/address"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 func (suite *KeeperTestSuite) TestGrantAllowance() {

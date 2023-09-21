@@ -6,12 +6,12 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/errors"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/x/group"
+	"github.com/cosmos/cosmos-sdk/v2/x/group/errors"
 )
 
 // doExecuteMsgs routes the messages to the registered handlers. Messages are limited to those that require no authZ or
@@ -24,7 +24,7 @@ func (s Keeper) doExecuteMsgs(ctx sdk.Context, router baseapp.MessageRouter, pro
 	}
 
 	// Ensure it's not too late to execute the messages.
-	// After https://github.com/cosmos/cosmos-sdk/issues/11245, proposals should
+	// After https://github.com/cosmos/cosmos-sdk/v2/issues/11245, proposals should
 	// be pruned automatically, so this function should not even be called, as
 	// the proposal doesn't exist in state. For sanity check, we can still keep
 	// this simple and cheap check.

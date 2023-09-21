@@ -8,11 +8,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	govutils "github.com/cosmos/cosmos-sdk/x/gov/client/utils"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	govutils "github.com/cosmos/cosmos-sdk/v2/x/gov/client/utils"
+	govv1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1"
 )
 
 type legacyProposal struct {

@@ -10,16 +10,16 @@ import (
 	"cosmossdk.io/collections"
 	"cosmossdk.io/math"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/types"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1"
+	stakingkeeper "github.com/cosmos/cosmos-sdk/v2/x/staking/keeper"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 func TestTickExpiredDepositPeriod(t *testing.T) {

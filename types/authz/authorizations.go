@@ -1,7 +1,7 @@
 package authz
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // AcceptResponse instruments the controller of an authz message if the request is accepted

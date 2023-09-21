@@ -3,10 +3,10 @@ package group
 import (
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/cosmos/cosmos-sdk/v2/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx"
 )
 
 var (

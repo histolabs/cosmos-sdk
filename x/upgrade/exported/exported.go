@@ -1,7 +1,7 @@
 package exported
 
 import (
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
 )
 
 // AppVersionModifier defines the interface fulfilled by BaseApp

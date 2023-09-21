@@ -6,7 +6,7 @@ for migration purposes and will be removed in a future release.
 package types
 
 import (
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/cosmos/cosmos-sdk/v2/x/params/types"
 )
 
 // Parameter keys

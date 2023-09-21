@@ -3,11 +3,11 @@ package cli
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcli "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/network"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authcli "github.com/cosmos/cosmos-sdk/v2/x/auth/client/cli"
 )
 
 // CheckTxCode verifies that the transaction result returns a specific code

@@ -5,10 +5,10 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client/tx"
+	"github.com/cosmos/cosmos-sdk/v2/x/slashing/types"
 )
 
 // NewTxCmd returns a root CLI command handler for all x/slashing transaction commands.

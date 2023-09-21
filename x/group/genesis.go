@@ -5,8 +5,8 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/codec/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
 )
 
 // NewGenesisState creates a new genesis state with default values.

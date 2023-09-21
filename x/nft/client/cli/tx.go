@@ -8,10 +8,10 @@ import (
 
 	"cosmossdk.io/x/nft"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client/tx"
+	"github.com/cosmos/cosmos-sdk/v2/version"
 )
 
 // GetTxCmd returns the transaction commands for this module

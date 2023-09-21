@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/client/cli"
 )
 
 func TestMigrateGenesis(t *testing.T) {

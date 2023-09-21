@@ -12,15 +12,15 @@ import (
 	storetypes "cosmossdk.io/core/store"
 	"cosmossdk.io/depinject"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/consensus/keeper"
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/consensus/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/consensus/types"
 )
 
 // ConsensusVersion defines the current x/consensus module consensus version.

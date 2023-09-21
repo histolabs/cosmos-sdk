@@ -6,12 +6,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client/tx"
+	kmultisig "github.com/cosmos/cosmos-sdk/v2/crypto/keys/multisig"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authclient "github.com/cosmos/cosmos-sdk/v2/x/auth/client"
 )
 
 const (

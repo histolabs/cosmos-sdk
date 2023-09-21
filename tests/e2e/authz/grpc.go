@@ -6,13 +6,13 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/authz/client/cli"
-	authzclitestutil "github.com/cosmos/cosmos-sdk/x/authz/client/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz/client/cli"
+	authzclitestutil "github.com/cosmos/cosmos-sdk/v2/x/authz/client/testutil"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 func (s *E2ETestSuite) TestQueryGrantGRPC() {

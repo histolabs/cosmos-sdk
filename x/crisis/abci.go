@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/crisis/keeper"
-	"github.com/cosmos/cosmos-sdk/x/crisis/types"
+	"github.com/cosmos/cosmos-sdk/v2/telemetry"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/crisis/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/crisis/types"
 )
 
 // check all registered invariants

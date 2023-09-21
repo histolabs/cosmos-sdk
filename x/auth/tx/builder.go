@@ -9,16 +9,16 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/ante"
+	authsigning "github.com/cosmos/cosmos-sdk/v2/x/auth/signing"
 )
 
 // wrapper is a wrapper around the tx.Tx proto.Message which retain the raw

@@ -12,8 +12,8 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
 )
 
 type MockClient struct {

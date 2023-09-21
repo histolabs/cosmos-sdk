@@ -8,12 +8,12 @@ import (
 	"cosmossdk.io/core/header"
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 func (suite *TestSuite) createAccounts(accs int) []sdk.AccAddress {

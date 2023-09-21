@@ -8,12 +8,12 @@ import (
 
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	v3 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v3"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx"
+	v3 "github.com/cosmos/cosmos-sdk/v2/x/gov/migrations/v3"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1beta1"
 )
 
 func TestConvertToLegacyProposal(t *testing.T) {

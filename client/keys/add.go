@@ -13,15 +13,15 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client/input"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/multisig"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 const (

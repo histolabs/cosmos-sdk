@@ -8,15 +8,15 @@ import (
 
 	"cosmossdk.io/collections"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/simulation"
 )
 
 // Simulation operation weights constants

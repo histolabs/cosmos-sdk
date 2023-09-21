@@ -14,12 +14,12 @@ import (
 	"cosmossdk.io/tools/hubl/internal/config"
 	"cosmossdk.io/tools/hubl/internal/flags"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/keys"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v2/crypto/codec"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
 )
 
 func KeyringCmd(chainName string) *cobra.Command {

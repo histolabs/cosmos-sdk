@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	crypto "github.com/cometbft/cometbft/proto/tendermint/crypto"
-	types "github.com/cosmos/cosmos-sdk/types"
+	types "github.com/cosmos/cosmos-sdk/v2/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

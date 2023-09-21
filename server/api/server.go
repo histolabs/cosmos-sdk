@@ -19,12 +19,12 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec/legacy"
+	"github.com/cosmos/cosmos-sdk/v2/server/config"
+	servercmtlog "github.com/cosmos/cosmos-sdk/v2/server/log"
+	"github.com/cosmos/cosmos-sdk/v2/telemetry"
+	grpctypes "github.com/cosmos/cosmos-sdk/v2/types/grpc"
 )
 
 // Server defines the server's API interface.

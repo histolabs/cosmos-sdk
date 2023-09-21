@@ -8,14 +8,14 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v2/crypto/codec"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/bech32"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // ValidatorPrivKeys is a slice of [*ValidatorPrivKey].

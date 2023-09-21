@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/types"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1"
 )
 
 var _ types.GovHooks = &MockGovHooksReceiver{}

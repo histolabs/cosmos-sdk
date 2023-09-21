@@ -4,12 +4,12 @@ import (
 	"math/rand"
 	"time"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/group"
 )
 
 const (

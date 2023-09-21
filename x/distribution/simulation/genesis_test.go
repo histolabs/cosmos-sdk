@@ -9,12 +9,12 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/distribution/simulation"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

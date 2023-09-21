@@ -3,9 +3,9 @@ package keeper_test
 import (
 	sdkmath "cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/query"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 func (suite *KeeperTestSuite) TestExportGenesis() {

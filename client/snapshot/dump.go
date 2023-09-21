@@ -11,7 +11,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/cosmos/cosmos-sdk/v2/server"
 )
 
 // DumpArchiveCmd returns a command to dump the snapshot as portable archive format

@@ -6,7 +6,7 @@ package cowsmouse.group.v1;
 import "cosmos_proto/cosmos.proto";
 import "cowsmouse/group/v1/types.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/group";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/x/group";
 
 // EventCreateGroup is an event emitted when a group is created.
 message EventCreateGroup {

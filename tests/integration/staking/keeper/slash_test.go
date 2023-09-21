@@ -11,12 +11,12 @@ import (
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	banktestutil "github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // bootstrapSlashTest creates 3 validators and bootstrap the app.
@@ -333,7 +333,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behavior, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behavior, ref https://github.com/cosmos/cosmos-sdk/v2/issues/1440
 	f.sdkCtx = f.sdkCtx.WithBlockHeight(13)
 	_, err = f.stakingKeeper.Slash(f.sdkCtx, consAddr, 9, 10, fraction)
 	assert.NilError(t, err)
@@ -360,7 +360,7 @@ func TestSlashWithUnbondingDelegation(t *testing.T) {
 	// slash validator again
 	// all originally bonded stake has been slashed, so this will have no effect
 	// on the unbonding delegation, but it will slash stake bonded since the infraction
-	// this may not be the desirable behavior, ref https://github.com/cosmos/cosmos-sdk/issues/1440
+	// this may not be the desirable behavior, ref https://github.com/cosmos/cosmos-sdk/v2/issues/1440
 	f.sdkCtx = f.sdkCtx.WithBlockHeight(13)
 	_, err = f.stakingKeeper.Slash(f.sdkCtx, consAddr, 9, 10, fraction)
 	assert.NilError(t, err)

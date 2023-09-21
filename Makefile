@@ -26,7 +26,7 @@ ifeq ($(LEDGER_ENABLED),true)
 	else
 	UNAME_S = $(shell uname -s)
 	ifeq ($(UNAME_S),OpenBSD)
-		$(warning OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/issues/1988))
+		$(warning OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/v2/issues/1988))
 	else
 		GCC = $(shell command -v gcc 2> /dev/null)
 		ifeq ($(GCC),)
@@ -70,11 +70,11 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=sim \
-		-X github.com/cosmos/cosmos-sdk/version.AppName=simd \
-		-X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
-		-X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
-		-X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)"
+ldflags = -X github.com/cosmos/cosmos-sdk/v2/version.Name=sim \
+		-X github.com/cosmos/cosmos-sdk/v2/version.AppName=simd \
+		-X github.com/cosmos/cosmos-sdk/v2/version.Version=$(VERSION) \
+		-X github.com/cosmos/cosmos-sdk/v2/version.Commit=$(COMMIT) \
+		-X "github.com/cosmos/cosmos-sdk/v2/version.BuildTags=$(build_tags_comma_sep)"
 
 ifeq (,$(findstring nostrip,$(COSMOS_BUILD_OPTIONS)))
   ldflags += -w -s
@@ -170,7 +170,7 @@ go.sum: go.mod
 ###############################################################################
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/v2/types"
 	go install golang.org/x/tools/cmd/godoc@latest
 	godoc -http=:6060
 

@@ -15,17 +15,17 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/authz/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/authz/keeper"
-	"github.com/cosmos/cosmos-sdk/x/authz/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	sdkclient "github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	cdctypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/authz/simulation"
 )
 
 var (

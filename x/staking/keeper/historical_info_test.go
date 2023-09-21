@@ -7,8 +7,8 @@ import (
 	coreheader "cosmossdk.io/core/header"
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/testutil"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // IsValSetSorted reports whether valset is sorted.

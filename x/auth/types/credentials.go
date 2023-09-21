@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/address"
 )
 
 // NewBaseAccountWithPubKey creates an account with an a pubkey.

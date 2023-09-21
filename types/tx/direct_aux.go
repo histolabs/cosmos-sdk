@@ -1,10 +1,10 @@
 package tx
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx/signing"
 )
 
 // ValidateBasic performs stateless validation of the sign doc.

@@ -1,6 +1,6 @@
 package types
 
-import paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+import paramtypes "github.com/cosmos/cosmos-sdk/v2/x/params/types"
 
 var (
 	KeyUnbondingTime     = []byte("UnbondingTime")

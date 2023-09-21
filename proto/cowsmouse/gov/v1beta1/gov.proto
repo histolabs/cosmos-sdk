@@ -9,7 +9,7 @@ import "google/protobuf/duration.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1beta1";
 
 option (gogoproto.goproto_getters_all) = false;
 
@@ -76,7 +76,7 @@ message Deposit {
   repeated cowsmouse.base.v1beta1.Coin amount = 3 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins"
   ];
 }
 
@@ -110,7 +110,7 @@ message Proposal {
   repeated cowsmouse.base.v1beta1.Coin total_deposit = 7 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins"
   ];
 
   // voting_start_time is the starting time to vote on a proposal.
@@ -204,7 +204,7 @@ message DepositParams {
   // Minimum deposit for a proposal to enter voting period.
   repeated cowsmouse.base.v1beta1.Coin min_deposit = 1 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins",
     (gogoproto.jsontag)      = "min_deposit,omitempty"
   ];
 

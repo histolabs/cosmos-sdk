@@ -11,17 +11,17 @@ import (
 	dbm "github.com/cosmos/cosmos-db"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/config"
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/server"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	txmodule "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/config"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	addresscodec "github.com/cosmos/cosmos-sdk/v2/codec/address"
+	"github.com/cosmos/cosmos-sdk/v2/server"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/tx"
+	txmodule "github.com/cosmos/cosmos-sdk/v2/x/auth/tx/config"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the

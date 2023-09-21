@@ -7,15 +7,15 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	simtypes "github.com/cosmos/cosmos-sdk/v2/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/types"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1"
+	"github.com/cosmos/cosmos-sdk/v2/x/simulation"
 )
 
 var initialProposalID = uint64(100000000000000)

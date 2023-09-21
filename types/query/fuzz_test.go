@@ -9,11 +9,11 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/store/prefix"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/address"
+	"github.com/cosmos/cosmos-sdk/v2/types/query"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 type fuzzTestSuite struct {

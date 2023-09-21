@@ -47,7 +47,7 @@ transaction execution or governance proposal execution.
 There are a few critical drawbacks to these layers of abstraction and the overall
 design of storage in the Cosmos SDK:
 
-* Since each module has its own IAVL `KVStore`, commitments are not [atomic](https://github.com/cosmos/cosmos-sdk/issues/14625)
+* Since each module has its own IAVL `KVStore`, commitments are not [atomic](https://github.com/cosmos/cosmos-sdk/v2/issues/14625)
     * Note, we can still allow modules to have their own IAVL `KVStore`, but the
       IAVL library will need to support the ability to pass a DB instance as an
       argument to various IAVL APIs.
@@ -60,7 +60,7 @@ design of storage in the Cosmos SDK:
   with different types of approaches to storage and commitments, along with the
   complications of many layers of abstractions referenced above.
 
-See the [Storage Discussion](https://github.com/cosmos/cosmos-sdk/discussions/13545) for more information.
+See the [Storage Discussion](https://github.com/cosmos/cosmos-sdk/v2/discussions/13545) for more information.
 
 ## Alternatives
 
@@ -287,4 +287,4 @@ we'll need to explore how PebbleDB handles compaction and state growth over time
 
 * [1] https://github.com/cosmos/iavl/pull/676
 * [2] https://github.com/cosmos/iavl/pull/664
-* [3] https://github.com/cosmos/cosmos-sdk/issues/14990
+* [3] https://github.com/cosmos/cosmos-sdk/v2/issues/14990

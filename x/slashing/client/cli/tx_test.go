@@ -11,17 +11,17 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/slashing/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	addresscodec "github.com/cosmos/cosmos-sdk/v2/codec/address"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	testutilmod "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/slashing"
+	"github.com/cosmos/cosmos-sdk/v2/x/slashing/client/cli"
 )
 
 type CLITestSuite struct {

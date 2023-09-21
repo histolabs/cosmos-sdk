@@ -6,7 +6,7 @@ import "gogoproto/gogo.proto";
 import "cowsmouse/authz/v1beta1/authz.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/authz";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/x/authz";
 
 // GenesisState defines the authz module's genesis state.
 message GenesisState {

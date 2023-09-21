@@ -7,9 +7,9 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	cryptokeyring "github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	cryptokeyring "github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
 )
 
 func printKeyringRecord(w io.Writer, ko KeyOutput, output string) error {

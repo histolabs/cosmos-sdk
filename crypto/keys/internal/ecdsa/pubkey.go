@@ -11,8 +11,8 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/address"
+	"github.com/cosmos/cosmos-sdk/v2/types/errors"
 )
 
 // signatureFromBytes function roughly copied from secp256k1_nocgo.go

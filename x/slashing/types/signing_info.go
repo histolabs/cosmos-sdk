@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // NewValidatorSigningInfo creates a new ValidatorSigningInfo instance

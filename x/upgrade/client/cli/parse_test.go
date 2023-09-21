@@ -8,7 +8,7 @@ import (
 
 	"cosmossdk.io/x/upgrade/types"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
+	addresscodec "github.com/cosmos/cosmos-sdk/v2/codec/address"
 )
 
 func TestParsePlan(t *testing.T) {

@@ -18,14 +18,14 @@ import (
 	evidencetestutil "cosmossdk.io/x/evidence/testutil"
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/ed25519"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
 )
 
 var (

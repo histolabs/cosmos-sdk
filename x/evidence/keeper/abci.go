@@ -8,8 +8,8 @@ import (
 	"cosmossdk.io/core/comet"
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/telemetry"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // BeginBlocker iterates through and handles any newly discovered evidence of

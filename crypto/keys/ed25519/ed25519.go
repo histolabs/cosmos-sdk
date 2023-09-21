@@ -12,9 +12,9 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/errors"
 )
 
 //-------------------------------------

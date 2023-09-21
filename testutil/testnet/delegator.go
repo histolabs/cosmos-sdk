@@ -1,10 +1,10 @@
 package testnet
 
 import (
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 // DelegatorPrivKeys is a slice of secp256k1.PrivKey.

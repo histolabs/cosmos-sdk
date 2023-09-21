@@ -7,14 +7,14 @@ import (
 
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/distribution/exported"
-	v3 "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v3"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/exported"
+	v3 "github.com/cosmos/cosmos-sdk/v2/x/distribution/migrations/v3"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/types"
 )
 
 type mockSubspace struct {

@@ -8,12 +8,12 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/simulation"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/ed25519"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/kv"
+	"github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/simulation"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 var (

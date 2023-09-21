@@ -5,9 +5,9 @@ import (
 
 	storetypes "cosmossdk.io/core/store"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	v1 "github.com/cosmos/cosmos-sdk/x/slashing/migrations/v1"
-	v2staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v2"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/slashing/migrations/v1"
+	v2staking "github.com/cosmos/cosmos-sdk/v2/x/staking/migrations/v2"
 )
 
 // MigrateStore performs in-place store migrations from v0.40 to v0.43. The

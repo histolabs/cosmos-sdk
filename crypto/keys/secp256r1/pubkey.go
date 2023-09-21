@@ -4,8 +4,8 @@ import (
 	cmtcrypto "github.com/cometbft/cometbft/crypto"
 	"github.com/cosmos/gogoproto/proto"
 
-	ecdsa "github.com/cosmos/cosmos-sdk/crypto/keys/internal/ecdsa"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	ecdsa "github.com/cosmos/cosmos-sdk/v2/crypto/keys/internal/ecdsa"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
 )
 
 // String implements proto.Message interface.

@@ -43,7 +43,7 @@ package collections
 import (
     "cosmossdk.io/collections"
     storetypes "cosmossdk.io/store/types"
-    sdk "github.com/cosmos/cosmos-sdk/types"
+    sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 var AllowListPrefix = collections.NewPrefix(0)
@@ -88,7 +88,7 @@ Since a module can have multiple collections, the following is expected:
 We don't want a collection to write over the state of the other collection so we pass it a prefix, which defines a storage
 partition owned by the collection.
 
-If you already built modules, the prefix translates to the items you were creating in your ``types/keys.go`` file, example: https://github.com/cosmos/cosmos-sdk/blob/main/x/feegrant/key.go#L27
+If you already built modules, the prefix translates to the items you were creating in your ``types/keys.go`` file, example: https://github.com/cosmos/cosmos-sdk/v2/blob/main/x/feegrant/key.go#L27
 
 your old:
 ```go
@@ -163,7 +163,7 @@ package collections
 import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 var IDsPrefix = collections.NewPrefix(0)
@@ -200,9 +200,9 @@ package collections
 import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsPrefix = collections.NewPrefix(0)
@@ -249,9 +249,9 @@ import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsPrefix = collections.NewPrefix(0)
@@ -348,7 +348,7 @@ import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
 	"fmt"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 var ValidatorsSetPrefix = collections.NewPrefix(0)
@@ -429,9 +429,9 @@ package collections
 import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 var ParamsPrefix = collections.NewPrefix(0)
@@ -499,9 +499,9 @@ package collections
 import (
 	"cosmossdk.io/collections"
 	storetypes "cosmossdk.io/store/types"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsPrefix = collections.NewPrefix(0)
@@ -653,7 +653,7 @@ import (
 	"cosmossdk.io/collections"
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 
@@ -916,9 +916,9 @@ import (
 	"cosmossdk.io/collections"
 	"cosmossdk.io/collections/indexes"
 	storetypes "cosmossdk.io/store/types"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsNumberIndexPrefix = collections.NewPrefix(1)
@@ -975,9 +975,9 @@ import (
 	"cosmossdk.io/collections"
 	"cosmossdk.io/collections/indexes"
 	storetypes "cosmossdk.io/store/types"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsNumberIndexPrefix = collections.NewPrefix(1)
@@ -1071,7 +1071,7 @@ In order to support old code, we have to support collections with interface valu
 
 The generic `codec.CollValue` is not able to handle interface values, so we need to use a special type `codec.CollValueInterface`.
 `codec.CollValueInterface` takes a `codec.BinaryCodec` as an argument, and uses it to marshal and unmarshal values as interfaces.
-The `codec.CollValueInterface` lives in the `codec` package, whose import path is `github.com/cosmos/cosmos-sdk/codec`.
+The `codec.CollValueInterface` lives in the `codec` package, whose import path is `github.com/cosmos/cosmos-sdk/v2/codec`.
 
 ### Instantiating Collections with interface values
 
@@ -1083,9 +1083,9 @@ package example
 import (
     "cosmossdk.io/collections"
     storetypes "cosmossdk.io/store/types"
-    "github.com/cosmos/cosmos-sdk/codec"
-    sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+    "github.com/cosmos/cosmos-sdk/v2/codec"
+    sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 var AccountsPrefix = collections.NewPrefix(0)
@@ -1132,7 +1132,7 @@ import (
 
  "cosmossdk.io/collections"
  storetypes "cosmossdk.io/store/types"
- "github.com/cosmos/cosmos-sdk/codec"
+ "github.com/cosmos/cosmos-sdk/v2/codec"
 )
 
 type AccAddress = string

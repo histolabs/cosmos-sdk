@@ -13,13 +13,13 @@ import (
 	"cosmossdk.io/log"
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testnet"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testnet"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 const memdb = "memdb"

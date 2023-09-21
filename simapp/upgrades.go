@@ -7,7 +7,7 @@ import (
 	circuittypes "cosmossdk.io/x/circuit/types"
 	upgradetypes "cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
 )
 
 // UpgradeName defines the on-chain upgrade name for the sample SimApp upgrade

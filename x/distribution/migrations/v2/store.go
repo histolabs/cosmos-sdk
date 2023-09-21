@@ -3,10 +3,10 @@ package v2
 import (
 	"cosmossdk.io/core/store"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v1"
-	v2staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v2"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	v1 "github.com/cosmos/cosmos-sdk/v2/x/distribution/migrations/v1"
+	v2staking "github.com/cosmos/cosmos-sdk/v2/x/staking/migrations/v2"
 )
 
 // MigrateStore performs in-place store migrations from v0.40 to v0.43. The

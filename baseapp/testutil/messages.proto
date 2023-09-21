@@ -4,7 +4,7 @@ import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
 import "cowsmouse/msg/v1/msg.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/baseapp/testutil";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/baseapp/testutil";
 
 message MsgCounter {
   option (cowsmouse.msg.v1.signer) = "signer";

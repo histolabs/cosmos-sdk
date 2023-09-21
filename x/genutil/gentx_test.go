@@ -15,16 +15,16 @@ import (
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltestutil "github.com/cosmos/cosmos-sdk/x/genutil/testutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil"
+	genutiltestutil "github.com/cosmos/cosmos-sdk/v2/x/genutil/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 var (

@@ -10,8 +10,8 @@ import (
 	collcodec "cosmossdk.io/collections/codec"
 	"cosmossdk.io/core/store"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 var (

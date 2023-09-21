@@ -9,8 +9,8 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
+	"github.com/cosmos/cosmos-sdk/v2/server"
+	servertypes "github.com/cosmos/cosmos-sdk/v2/server/types"
 )
 
 // RestoreSnapshotCmd returns a command to restore a snapshot

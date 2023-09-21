@@ -1,7 +1,7 @@
 syntax = "proto3";
 package cowsmouse.distribution.v1beta1;
 
-option go_package            = "github.com/cosmos/cosmos-sdk/x/distribution/types";
+option go_package            = "github.com/cosmos/cosmos-sdk/v2/x/distribution/types";
 option (gogoproto.equal_all) = true;
 
 import "gogoproto/gogo.proto";
@@ -57,7 +57,7 @@ message Params {
 //  + one per validator for the zeroeth period, set on initialization
 message ValidatorHistoricalRewards {
   repeated cowsmouse.base.v1beta1.DecCoin cumulative_reward_ratio = 1 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -69,7 +69,7 @@ message ValidatorHistoricalRewards {
 // each block as long as the validator's tokens remain constant.
 message ValidatorCurrentRewards {
   repeated cowsmouse.base.v1beta1.DecCoin rewards = 1 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -80,7 +80,7 @@ message ValidatorCurrentRewards {
 // for a validator kept as a running counter, can be withdrawn at any time.
 message ValidatorAccumulatedCommission {
   repeated cowsmouse.base.v1beta1.DecCoin commission = 1 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -90,7 +90,7 @@ message ValidatorAccumulatedCommission {
 // for a validator inexpensive to track, allows simple sanity checks.
 message ValidatorOutstandingRewards {
   repeated cowsmouse.base.v1beta1.DecCoin rewards = 1 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -119,7 +119,7 @@ message FeePool {
   repeated cowsmouse.base.v1beta1.DecCoin community_pool = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins"
   ];
 }
 
@@ -144,7 +144,7 @@ message CommunityPoolSpendProposal {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins"
   ];
 }
 
@@ -174,7 +174,7 @@ message DelegationDelegatorReward {
   string validator_address = 1 [(cosmos_proto.scalar) = "cowsmouse.ValidatorAddressString"];
 
   repeated cowsmouse.base.v1beta1.DecCoin reward = 2 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];

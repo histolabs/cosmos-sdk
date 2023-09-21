@@ -9,13 +9,13 @@ import (
 	collcodec "cosmossdk.io/collections/codec"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	v4 "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v4"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution"
+	v4 "github.com/cosmos/cosmos-sdk/v2/x/distribution/migrations/v4"
 )
 
 func TestMigration(t *testing.T) {

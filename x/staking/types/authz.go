@@ -6,13 +6,13 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/authz"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/authz"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
 )
 
 // TODO: Revisit this once we have propoer gas fee framework.
-// Tracking issues https://github.com/cosmos/cosmos-sdk/issues/9054, https://github.com/cosmos/cosmos-sdk/discussions/9072
+// Tracking issues https://github.com/cosmos/cosmos-sdk/v2/issues/9054, https://github.com/cosmos/cosmos-sdk/v2/discussions/9072
 const gasCostPerIteration = uint64(10)
 
 // NewStakeAuthorization creates a new StakeAuthorization object.

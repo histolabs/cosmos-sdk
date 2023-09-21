@@ -12,16 +12,16 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	svrcmd "github.com/cosmos/cosmos-sdk/v2/server/cmd"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/network"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/distribution/client/cli"
+	distrtypes "github.com/cosmos/cosmos-sdk/v2/x/distribution/types"
+	minttypes "github.com/cosmos/cosmos-sdk/v2/x/mint/types"
 )
 
 type E2ETestSuite struct {

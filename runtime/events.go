@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/core/event"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 var _ event.Service = (*EventService)(nil)

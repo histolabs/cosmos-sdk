@@ -9,11 +9,11 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/version"
-	gcutils "github.com/cosmos/cosmos-sdk/x/gov/client/utils"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/version"
+	gcutils "github.com/cosmos/cosmos-sdk/v2/x/gov/client/utils"
+	"github.com/cosmos/cosmos-sdk/v2/x/gov/types"
 )
 
 // GetCustomQueryCmd returns the cli query commands for this module

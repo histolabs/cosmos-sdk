@@ -13,19 +13,19 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	stakingcli "github.com/cosmos/cosmos-sdk/x/staking/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
+	svrcmd "github.com/cosmos/cosmos-sdk/v2/server/cmd"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/module"
+	testutilmod "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/client/cli"
+	stakingcli "github.com/cosmos/cosmos-sdk/v2/x/staking/client/cli"
 )
 
 type CLITestSuite struct {

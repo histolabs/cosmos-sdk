@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 func (s *KeeperTestSuite) TestUpdateParams() {

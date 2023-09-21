@@ -13,16 +13,16 @@ import (
 
 	"cosmossdk.io/core/header"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/math"
-	"github.com/cosmos/cosmos-sdk/x/group/keeper"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/query"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/group"
+	"github.com/cosmos/cosmos-sdk/v2/x/group/internal/math"
+	"github.com/cosmos/cosmos-sdk/v2/x/group/keeper"
+	minttypes "github.com/cosmos/cosmos-sdk/v2/x/mint/types"
 )
 
 var EventProposalPruned = "cosmos.group.v1.EventProposalPruned"

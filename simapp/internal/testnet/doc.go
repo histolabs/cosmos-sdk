@@ -1,5 +1,5 @@
 // Package testnet contains tests for
-// [github.com/cosmos/cosmos-sdk/testutil/testnet].
+// [github.com/cosmos/cosmos-sdk/v2/testutil/testnet].
 //
 // Eventually all of these tests will move into that package,
 // but that is currently blocked on having a minimal app defined

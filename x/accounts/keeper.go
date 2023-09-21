@@ -178,7 +178,7 @@ func (k Keeper) makeAddress(ctx context.Context) ([]byte, error) {
 		return nil, err
 	}
 
-	// TODO: better address scheme, ref: https://github.com/cosmos/cosmos-sdk/issues/17516
+	// TODO: better address scheme, ref: https://github.com/cosmos/cosmos-sdk/v2/issues/17516
 	addr := sha256.Sum256(append([]byte("x/accounts"), binary.BigEndian.AppendUint64(nil, num)...))
 	return addr[:], nil
 }

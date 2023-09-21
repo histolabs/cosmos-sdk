@@ -6,7 +6,7 @@ import (
 	"github.com/cometbft/cometbft/node"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testnet"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testnet"
 )
 
 // Nil entries in a Nodes slice don't fail Stop or Wait.

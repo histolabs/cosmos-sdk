@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 import "cowsmouse/msg/v1/msg.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/bank/types";
+option go_package = "github.com/cosmos/cosmos-sdk/v2/x/bank/types";
 
 // Msg defines the bank Msg service.
 service Msg {
@@ -54,7 +54,7 @@ message MsgSend {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/v2/types.Coins"
   ];
 }
 

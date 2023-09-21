@@ -3,7 +3,7 @@ package v1beta1
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // NewDeposit creates a new Deposit instance

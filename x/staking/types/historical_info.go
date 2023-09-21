@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/errors"
 	"cosmossdk.io/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
 )
 
 // NewHistoricalInfo will create a historical information struct from header and valset

@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
 )
 
 func BenchmarkContext_KVStore(b *testing.B) {

@@ -14,10 +14,10 @@ import (
 	"cosmossdk.io/log"
 	"cosmossdk.io/simapp"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testnet"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/baseapp"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testnet"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // Use a limited set of available ports to ensure that

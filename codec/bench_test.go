@@ -9,10 +9,10 @@ import (
 
 	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	codectestutil "github.com/cosmos/cosmos-sdk/v2/codec/testutil"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 func BenchmarkLegacyGetSigners(b *testing.B) {

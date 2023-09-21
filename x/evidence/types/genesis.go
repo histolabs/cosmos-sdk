@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/x/evidence/exported"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec/types"
 )
 
 var _ types.UnpackInterfacesMessage = GenesisState{}

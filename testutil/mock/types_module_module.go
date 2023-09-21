@@ -10,11 +10,11 @@ import (
 	reflect "reflect"
 
 	types "github.com/cometbft/cometbft/abci/types"
-	client "github.com/cosmos/cosmos-sdk/client"
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	types0 "github.com/cosmos/cosmos-sdk/codec/types"
-	types1 "github.com/cosmos/cosmos-sdk/types"
-	module "github.com/cosmos/cosmos-sdk/types/module"
+	client "github.com/cosmos/cosmos-sdk/v2/client"
+	codec "github.com/cosmos/cosmos-sdk/v2/codec"
+	types0 "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	types1 "github.com/cosmos/cosmos-sdk/v2/types"
+	module "github.com/cosmos/cosmos-sdk/v2/types/module"
 	gomock "github.com/golang/mock/gomock"
 	runtime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 )

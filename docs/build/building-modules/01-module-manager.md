@@ -61,7 +61,7 @@ Use `module.CoreAppModuleBasicAdaptor` instead for creating an `AppModuleBasic` 
 The `AppModuleBasic` interface defines the independent methods modules need to implement.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L56-L66
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L56-L66
 ```
 
 Let us go through the methods:
@@ -75,7 +75,7 @@ All the `AppModuleBasic` of an application are managed by the [`BasicManager`](#
 ### `HasName`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L71-L73
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L71-L73
 ```
 
 * `HasName` is an interface that has a method `Name()`. This method returns the name of the module as a `string`.
@@ -89,7 +89,7 @@ For easily creating an `AppModule` that only has genesis functionalities, use `m
 #### `module.HasGenesisBasics`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L76-L79
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L76-L79
 ```
 
 Let us go through the methods:
@@ -102,7 +102,7 @@ Let us go through the methods:
 `HasGenesis` is an extension interface for allowing modules to implement genesis functionalities.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/6ce2505/types/module/module.go#L184-L189
+https://github.com/cosmos/cosmos-sdk/v2/blob/6ce2505/types/module/module.go#L184-L189
 ```
 
 #### `module.HasABCIGenesis`
@@ -110,7 +110,7 @@ https://github.com/cosmos/cosmos-sdk/blob/6ce2505/types/module/module.go#L184-L1
 `HasABCIGenesis` is an extension interface for allowing modules to implement genesis functionalities and returns validator set updates.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/6ce2505/types/module/module.go#L191-L196
+https://github.com/cosmos/cosmos-sdk/v2/blob/6ce2505/types/module/module.go#L191-L196
 ```
 
 #### `appmodule.HasGenesis`
@@ -120,7 +120,7 @@ https://github.com/cosmos/cosmos-sdk/blob/6ce2505/types/module/module.go#L191-L1
 :::
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/6ce2505/core/appmodule/genesis.go#L8-L25
+https://github.com/cosmos/cosmos-sdk/v2/blob/6ce2505/core/appmodule/genesis.go#L8-L25
 ```
 
 ### `AppModule`
@@ -131,7 +131,7 @@ The `AppModule` interface defines a module. Modules can declare their functional
 #### `appmodule.AppModule`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/6afece6/core/appmodule/module.go#L11-L20
+https://github.com/cosmos/cosmos-sdk/v2/blob/6afece6/core/appmodule/module.go#L11-L20
 ```
 
 #### `module.AppModule`
@@ -141,7 +141,7 @@ Previously the `module.AppModule` interface was containing all the methods that 
 :::
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L195-L199
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L195-L199
 ```
 
 ### `HasInvariants`
@@ -149,7 +149,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go
 This interface defines one method. It allows to checks if a module can register invariants.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L202-L205
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L202-L205
 ```
 
 * `RegisterInvariants(sdk.InvariantRegistry)`: Registers the [`invariants`](./07-invariants.md) of the module. If an invariant deviates from its predicted value, the [`InvariantRegistry`](./07-invariants.md#registry) triggers appropriate logic (most often the chain will be halted).
@@ -161,13 +161,13 @@ This interface defines one method. It allows to checks if a module can register 
 #### `appmodule.HasService`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/6afece6/core/appmodule/module.go#L22-L40
+https://github.com/cosmos/cosmos-sdk/v2/blob/6afece6/core/appmodule/module.go#L22-L40
 ```
 
 #### `module.HasServices`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L208-L211
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L208-L211
 ```
 
 * `RegisterServices(Configurator)`: Allows a module to register services.
@@ -177,7 +177,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go
 This interface defines one method for checking a module consensus version.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L214-L220
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L214-L220
 ```
 
 * `ConsensusVersion() uint64`: Returns the consensus version of the module.
@@ -191,7 +191,7 @@ The `HasPreBlocker` is an extension interface from `appmodule.AppModule`. All mo
 The `HasBeginBlocker` is an extension interface from `appmodule.AppModule`. All modules that have an `BeginBlock` method implement this interface.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.go#L56-L63
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/core/appmodule/module.go#L56-L63
 ```
 
 * `BeginBlock(context.Context) error`: This method gives module developers the option to implement logic that is automatically triggered at the beginning of each block.
@@ -201,7 +201,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.
 The `HasEndBlocker` is an extension interface from `appmodule.AppModule`. All modules that have an `EndBlock` method implement this interface. If a module need to return validator set updates (staking), they can use `HasABCIEndBlock`
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.go#L66-L72
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/core/appmodule/module.go#L66-L72
 ```
 
 * `EndBlock(context.Context) error`: This method gives module developers the option to implement logic that is automatically triggered at the end of each block.
@@ -211,7 +211,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.
 The `HasABCIEndBlock` is an extension interface from `module.AppModule`. All modules that have an `EndBlock` which return validator set updates implement this interface.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L222-L225
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L222-L225
 ```
 
 * `EndBlock(context.Context) ([]abci.ValidatorUpdate, error)`: This method gives module developers the option to inform the underlying consensus engine of validator set changes (e.g. the `staking` module).
@@ -221,7 +221,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go
 `HasPrecommit` is an extension interface from `appmodule.AppModule`. All modules that have a `Precommit` method implement this interface.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.go#L49-L52
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/core/appmodule/module.go#L49-L52
 ```
 
 * `Precommit(context.Context)`: This method gives module developers the option to implement logic that is automatically triggered during [`Commit'](../../learn/advanced/00-baseapp.md#commit) of each block using the [`finalizeblockstate`](../../learn/advanced/00-baseapp.md#state-updates) of the block to be committed. Implement empty if no logic needs to be triggered during `Commit` of each block for this module.
@@ -231,7 +231,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.
 `HasPrepareCheckState` is an extension interface from `appmodule.AppModule`. All modules that have a `PrepareCheckState` method implement this interface.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/core/appmodule/module.go#L49-L52
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/core/appmodule/module.go#L49-L52
 ```
 
 * `PrepareCheckState(context.Context)`: This method gives module developers the option to implement logic that is automatically triggered during [`Commit'](../../learn/advanced/00-baseapp.md#commit) of each block using the [`checkState`](../../learn/advanced/00-baseapp.md#state-updates) of the next block. Implement empty if no logic needs to be triggered during `Commit` of each block for this module.
@@ -267,7 +267,7 @@ Module managers are used to manage collections of `AppModuleBasic` and `AppModul
 The `BasicManager` is a structure that lists all the `AppModuleBasic` of an application:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L82
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L82
 ```
 
 It implements the following methods:
@@ -287,7 +287,7 @@ It implements the following methods:
 The `Manager` is a structure that holds all the `AppModule` of an application, and defines the order of execution between several key components of these modules:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/module/module.go#L267-L276
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/module/module.go#L267-L276
 ```
 
 The module manager is used throughout the application whenever an action on a collection of modules is required. It implements the following methods:
@@ -316,15 +316,15 @@ The module manager is used throughout the application whenever an action on a co
 Here's an example of a concrete integration within an `simapp`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/simapp/app.go#L411-L434
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/simapp/app.go#L411-L434
 ```
 
 This is the same example from `runtime` (the package that powers app v2):
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/runtime/module.go#L61
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/runtime/module.go#L61
 ```
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/runtime/module.go#L82
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/runtime/module.go#L82
 ```

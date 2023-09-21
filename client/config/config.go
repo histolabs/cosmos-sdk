@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
 )
 
 // DefaultConfig returns default config for the client.toml
@@ -102,7 +102,7 @@ func CreateClientConfig(ctx client.Context, customClientTemplate string, customC
 		return ctx, fmt.Errorf("couldn't get keyring: %w", err)
 	}
 
-	// https://github.com/cosmos/cosmos-sdk/issues/8986
+	// https://github.com/cosmos/cosmos-sdk/v2/issues/8986
 	client, err := client.NewClientFromNode(conf.Node)
 	if err != nil {
 		return ctx, fmt.Errorf("couldn't get client from nodeURI: %w", err)

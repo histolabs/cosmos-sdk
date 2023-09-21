@@ -28,17 +28,17 @@ import (
 
 	pruningtypes "cosmossdk.io/store/pruning/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
-	servergrpc "github.com/cosmos/cosmos-sdk/server/grpc"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/version"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/server/api"
+	serverconfig "github.com/cosmos/cosmos-sdk/v2/server/config"
+	servergrpc "github.com/cosmos/cosmos-sdk/v2/server/grpc"
+	servercmtlog "github.com/cosmos/cosmos-sdk/v2/server/log"
+	"github.com/cosmos/cosmos-sdk/v2/server/types"
+	"github.com/cosmos/cosmos-sdk/v2/telemetry"
+	"github.com/cosmos/cosmos-sdk/v2/types/mempool"
+	"github.com/cosmos/cosmos-sdk/v2/version"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 const (

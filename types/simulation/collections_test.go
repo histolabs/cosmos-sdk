@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/collections"
 	"cosmossdk.io/collections/colltest"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/cosmos/cosmos-sdk/v2/types/kv"
 )
 
 func TestNewStoreDecoderFuncFromCollectionsSchema(t *testing.T) {

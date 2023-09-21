@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	authvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	authvesting "github.com/cosmos/cosmos-sdk/v2/x/auth/vesting/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 // AddGenesisAccount adds a genesis account to the genesis state.

@@ -14,11 +14,11 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	"github.com/cosmos/cosmos-sdk/v2/codec/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	grpctypes "github.com/cosmos/cosmos-sdk/v2/types/grpc"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx"
 )
 
 var _ gogogrpc.ClientConn = Context{}

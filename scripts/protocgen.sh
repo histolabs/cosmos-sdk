@@ -31,11 +31,10 @@ cd ..
 (cd tests/integration/tx/internal; make codegen)
 
 # move proto files to the right places
-cp -r github.com/cosmos/cosmos-sdk/* ./
+cp -r github.com/cosmos/cosmos-sdk/v2/* ./
 cp -r cosmossdk.io/** ./
 rm -rf github.com cosmossdk.io
 
 go mod tidy
 
-./scripts/protocgen-pulsar.sh
 

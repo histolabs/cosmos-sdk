@@ -1,6 +1,6 @@
 package keeper
 
-import sdk "github.com/cosmos/cosmos-sdk/types"
+import sdk "github.com/cosmos/cosmos-sdk/v2/types"
 
 // ValidateInitialDeposit is a helper function used only in deposit tests which returns the same
 // functionality of validateInitialDeposit private function.

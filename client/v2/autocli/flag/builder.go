@@ -17,7 +17,7 @@ import (
 	"cosmossdk.io/client/v2/autocli/keyring"
 	"cosmossdk.io/client/v2/internal/util"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/v2/client"
 )
 
 // Builder manages options for building pflag flags for protobuf messages.

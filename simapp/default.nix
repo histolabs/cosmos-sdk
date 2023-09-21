@@ -11,11 +11,11 @@ let
   version = "v0.0.1";
   tags = [ "ledger" "netgo" "rocksdb" "grocksdb_no_link" ];
   ldflags = lib.concatStringsSep "\n" ([
-    "-X github.com/cosmos/cosmos-sdk/version.Name=${pname}"
-    "-X github.com/cosmos/cosmos-sdk/version.AppName=${pname}"
-    "-X github.com/cosmos/cosmos-sdk/version.Version=${version}"
-    "-X github.com/cosmos/cosmos-sdk/version.BuildTags=${lib.concatStringsSep "," tags}"
-    "-X github.com/cosmos/cosmos-sdk/version.Commit=${rev}"
+    "-X github.com/cosmos/cosmos-sdk/v2/version.Name=${pname}"
+    "-X github.com/cosmos/cosmos-sdk/v2/version.AppName=${pname}"
+    "-X github.com/cosmos/cosmos-sdk/v2/version.Version=${version}"
+    "-X github.com/cosmos/cosmos-sdk/v2/version.BuildTags=${lib.concatStringsSep "," tags}"
+    "-X github.com/cosmos/cosmos-sdk/v2/version.Commit=${rev}"
   ]);
 in
 buildGoApplication rec {

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/network"
 	"github.com/stretchr/testify/suite"
 )
 

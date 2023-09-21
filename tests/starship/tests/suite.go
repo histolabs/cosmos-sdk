@@ -15,9 +15,9 @@ import (
 	"cosmossdk.io/simapp"
 	"cosmossdk.io/simapp/params"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	txtypes "github.com/cosmos/cosmos-sdk/v2/types/tx"
 )
 
 var (

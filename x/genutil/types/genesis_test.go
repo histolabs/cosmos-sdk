@@ -9,7 +9,7 @@ import (
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
 
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 func TestAppGenesis_Marshal(t *testing.T) {

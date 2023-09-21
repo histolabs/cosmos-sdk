@@ -5,8 +5,8 @@ import (
 
 	circuitante "cosmossdk.io/x/circuit/ante"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/ante"
 )
 
 // HandlerOptions are the options required for constructing a default SDK AnteHandler.

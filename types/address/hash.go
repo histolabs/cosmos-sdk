@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
+	"github.com/cosmos/cosmos-sdk/v2/internal/conv"
 )
 
 // Len is the length of base addresses

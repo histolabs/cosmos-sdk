@@ -6,15 +6,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	addresscodec "github.com/cosmos/cosmos-sdk/v2/codec/address"
+	codectypes "github.com/cosmos/cosmos-sdk/v2/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v2/crypto/codec"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keyring"
+	kmultisig "github.com/cosmos/cosmos-sdk/v2/crypto/keys/multisig"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 func generatePubKeys(n int) []types.PubKey {

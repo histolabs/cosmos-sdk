@@ -228,7 +228,7 @@ updates:
       - dependencies
       - "testing-required"
     allow:
-      - dependency-name: "github.com/cosmos/cosmos-sdk/*"
+      - dependency-name: "github.com/cosmos/cosmos-sdk/v2/*"
         dependency-type: "all"
       - dependency-name: "github.com/cosmos/*"
         dependency-type: "all"
@@ -253,7 +253,7 @@ updates:
       - dependencies
       - "testing-required"
     allow:
-      - dependency-name: "github.com/cosmos/cosmos-sdk/*"
+      - dependency-name: "github.com/cosmos/cosmos-sdk/v2/*"
         dependency-type: "all"
       - dependency-name: "github.com/cosmos/*"
         dependency-type: "all"

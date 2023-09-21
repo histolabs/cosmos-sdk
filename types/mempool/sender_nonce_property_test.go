@@ -8,10 +8,10 @@ import (
 
 	"cosmossdk.io/log"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	mempool "github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	mempool "github.com/cosmos/cosmos-sdk/v2/types/mempool"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/signing"
 )
 
 var (

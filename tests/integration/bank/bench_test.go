@@ -9,15 +9,15 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	simtestutil "github.com/cosmos/cosmos-sdk/v2/testutil/sims"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	_ "github.com/cosmos/cosmos-sdk/v2/x/bank"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 var moduleAccAddr = authtypes.NewModuleAddress(stakingtypes.BondedPoolName)
@@ -60,7 +60,7 @@ func genSequenceOfTxs(txGen client.TxConfig,
 }
 
 func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/v2/issues/10023")
 	b.ReportAllocs()
 
 	acc := authtypes.BaseAccount{
@@ -118,7 +118,7 @@ func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
 }
 
 func BenchmarkOneBankMultiSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/v2/issues/10023")
 	b.ReportAllocs()
 
 	acc := authtypes.BaseAccount{

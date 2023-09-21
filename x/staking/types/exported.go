@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/math"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
 )
 
 // DelegationI delegation bond for a delegated proof of stake system

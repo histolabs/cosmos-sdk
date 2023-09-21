@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 // FeeAllowance implementations are tied to a given fee delegator and delegatee,

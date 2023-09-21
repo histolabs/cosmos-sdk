@@ -1,9 +1,9 @@
 package tx_test
 
 import (
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	"github.com/cosmos/cosmos-sdk/v2/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 const (

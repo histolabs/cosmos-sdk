@@ -5,8 +5,8 @@ import (
 
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/ed25519"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
 )
 
 func (s *KeeperTestSuite) TestSubmitEvidence() {

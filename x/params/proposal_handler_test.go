@@ -9,16 +9,16 @@ import (
 
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	paramstestutil "github.com/cosmos/cosmos-sdk/x/params/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	govv1beta1 "github.com/cosmos/cosmos-sdk/v2/x/gov/types/v1beta1"
+	"github.com/cosmos/cosmos-sdk/v2/x/params"
+	"github.com/cosmos/cosmos-sdk/v2/x/params/keeper"
+	paramstestutil "github.com/cosmos/cosmos-sdk/v2/x/params/testutil"
+	paramtypes "github.com/cosmos/cosmos-sdk/v2/x/params/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/params/types/proposal"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // StakingKeeper defines the expected staking keeper

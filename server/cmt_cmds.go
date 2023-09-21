@@ -23,17 +23,17 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	rpc "github.com/cosmos/cosmos-sdk/client/rpc"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	servercmtlog "github.com/cosmos/cosmos-sdk/server/log"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/client/flags"
+	"github.com/cosmos/cosmos-sdk/v2/client/grpc/cmtservice"
+	rpc "github.com/cosmos/cosmos-sdk/v2/client/rpc"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v2/crypto/codec"
+	servercmtlog "github.com/cosmos/cosmos-sdk/v2/server/log"
+	"github.com/cosmos/cosmos-sdk/v2/server/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/types/query"
+	"github.com/cosmos/cosmos-sdk/v2/version"
+	auth "github.com/cosmos/cosmos-sdk/v2/x/auth/client/cli"
 )
 
 // StatusCommand returns the command to return the status of the network.

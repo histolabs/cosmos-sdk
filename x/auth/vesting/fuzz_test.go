@@ -13,17 +13,17 @@ import (
 	"cosmossdk.io/log"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v2/codec/address"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	moduletestutil "github.com/cosmos/cosmos-sdk/v2/types/module/testutil"
+	authkeeper "github.com/cosmos/cosmos-sdk/v2/x/auth/keeper"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
+	vestingtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/vesting/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/bank/keeper"
+	banktestutil "github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	banktypes "github.com/cosmos/cosmos-sdk/v2/x/bank/types"
 )
 
 var (

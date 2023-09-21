@@ -4,9 +4,9 @@ import (
 	gocontext "context"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 func (s *KeeperTestSuite) TestGRPCQueryValidator() {

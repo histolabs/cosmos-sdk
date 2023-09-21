@@ -6,13 +6,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/cosmos/cosmos-sdk/v2/server"
+	clitestutil "github.com/cosmos/cosmos-sdk/v2/testutil/cli"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/network"
 )
 
 func TestStatusCommand(t *testing.T) {
-	t.Skip() // https://github.com/cosmos/cosmos-sdk/issues/17446
+	t.Skip() // https://github.com/cosmos/cosmos-sdk/v2/issues/17446
 
 	cfg, err := network.DefaultConfigWithAppConfig(network.MinimumAppConfig())
 	require.NoError(t, err)

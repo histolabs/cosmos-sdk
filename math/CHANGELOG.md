@@ -38,93 +38,93 @@ Ref: https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.j
 
 ### Bug Fixes
 
-* [#17725](https://github.com/cosmos/cosmos-sdk/pull/17725) Fix state break in ApproxRoot. This has been present since math/v1.0.1. It changed the rounding behavior at precision end in an intermediary division from banker's to truncation. The truncation occurs from binary right shift in the case of square roots. The change is now reverted back to banker's rounding universally for any root.
+* [#17725](https://github.com/cosmos/cosmos-sdk/v2/pull/17725) Fix state break in ApproxRoot. This has been present since math/v1.0.1. It changed the rounding behavior at precision end in an intermediary division from banker's to truncation. The truncation occurs from binary right shift in the case of square roots. The change is now reverted back to banker's rounding universally for any root.
 
-## [math/v1.1.2](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.1.2) - 2023-08-21
-
-### Bug Fixes
-
-* [#17489](https://github.com/cosmos/cosmos-sdk/pull/17489) Revert [#16263](https://github.com/cosmos/cosmos-sdk/pull/16263).
-
-## [math/v1.1.1](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.1.1) - 2023-08-21
+## [math/v1.1.2](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.1.2) - 2023-08-21
 
 ### Bug Fixes
 
-* [#17480](https://github.com/cosmos/cosmos-sdk/pull/17480) Fix panic when calling `.Size()` on a nil `math.Int` value.
+* [#17489](https://github.com/cosmos/cosmos-sdk/v2/pull/17489) Revert [#16263](https://github.com/cosmos/cosmos-sdk/v2/pull/16263).
 
-## [math/v1.1.0](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.1.0) - 2023-08-19
+## [math/v1.1.1](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.1.1) - 2023-08-21
+
+### Bug Fixes
+
+* [#17480](https://github.com/cosmos/cosmos-sdk/v2/pull/17480) Fix panic when calling `.Size()` on a nil `math.Int` value.
+
+## [math/v1.1.0](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.1.0) - 2023-08-19
 
 ### Features
 
-* [#17427](https://github.com/cosmos/cosmos-sdk/pull/17427) Implement LegacyDec.MulRoundUp that rounds up at precision end.
+* [#17427](https://github.com/cosmos/cosmos-sdk/v2/pull/17427) Implement LegacyDec.MulRoundUp that rounds up at precision end.
 
 ### Improvements
 
-* [#17109](https://github.com/cosmos/cosmos-sdk/pull/17109) Add `.ToLegacyDec()` method on `math.Int` type for converting to `math.LegacyDec`.
-* [#16263](https://github.com/cosmos/cosmos-sdk/pull/16263) Improved `math/Int.Size` by computing the decimal digits count instead of firstly invoking .Marshal() then checking the length
+* [#17109](https://github.com/cosmos/cosmos-sdk/v2/pull/17109) Add `.ToLegacyDec()` method on `math.Int` type for converting to `math.LegacyDec`.
+* [#16263](https://github.com/cosmos/cosmos-sdk/v2/pull/16263) Improved `math/Int.Size` by computing the decimal digits count instead of firstly invoking .Marshal() then checking the length
 
 ### Bug Fixes
 
-* [#17352](https://github.com/cosmos/cosmos-sdk/pull/17352) Ensure that modifying the argument to `NewIntFromBigInt` doesn't mutate the returned value.
-* [#16266](https://github.com/cosmos/cosmos-sdk/pull/16266) Fix legacy dec power mut zero exponent precision.
+* [#17352](https://github.com/cosmos/cosmos-sdk/v2/pull/17352) Ensure that modifying the argument to `NewIntFromBigInt` doesn't mutate the returned value.
+* [#16266](https://github.com/cosmos/cosmos-sdk/v2/pull/16266) Fix legacy dec power mut zero exponent precision.
 
-## [math/v1.0.1](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.0.1) - 2023-05-15
+## [math/v1.0.1](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.0.1) - 2023-05-15
 
 ### Improvements
 
-* [#15768](https://github.com/cosmos/cosmos-sdk/pull/15768) Removed the second call to the `init` method for the global variable `grand`.
-* [#16141](https://github.com/cosmos/cosmos-sdk/pull/16141) Speedup `LegacyDec.ApproxRoot` and `LegacyDec.ApproxSqrt`.
+* [#15768](https://github.com/cosmos/cosmos-sdk/v2/pull/15768) Removed the second call to the `init` method for the global variable `grand`.
+* [#16141](https://github.com/cosmos/cosmos-sdk/v2/pull/16141) Speedup `LegacyDec.ApproxRoot` and `LegacyDec.ApproxSqrt`.
 
 ### Bug Fixes
 
-* [#15714](https://github.com/cosmos/cosmos-sdk/pull/15714) `FormatInt` returns an error on empty string.
+* [#15714](https://github.com/cosmos/cosmos-sdk/v2/pull/15714) `FormatInt` returns an error on empty string.
 
-## [math/v1.0.0](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.0.0) - 2023-03-23
+## [math/v1.0.0](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.0.0) - 2023-03-23
 
 ### Bug Fixes
 
-* [#15506](https://github.com/cosmos/cosmos-sdk/issues/16605) Dec marshal shouldn't have side effects
+* [#15506](https://github.com/cosmos/cosmos-sdk/v2/issues/16605) Dec marshal shouldn't have side effects
 
-## [math/v1.0.0-rc.0](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.0.0-rc.0) - 2023-03-13
+## [math/v1.0.0-rc.0](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.0.0-rc.0) - 2023-03-13
 
 ### Features
 
-* [#15043](https://github.com/cosmos/cosmos-sdk/issues/15043) add rand funcs to math
+* [#15043](https://github.com/cosmos/cosmos-sdk/v2/issues/15043) add rand funcs to math
 
 ### Bug Fixes
 
-* [#14922](https://github.com/cosmos/cosmos-sdk/issues/14922) check for negative precision
+* [#14922](https://github.com/cosmos/cosmos-sdk/v2/issues/14922) check for negative precision
 
 ### Testing
 
-* [#15215](https://github.com/cosmos/cosmos-sdk/issues/15215) fix `FormatDec` test
+* [#15215](https://github.com/cosmos/cosmos-sdk/v2/issues/15215) fix `FormatDec` test
 
-## [math/v1.0.0-beta.6](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.0.0-beta.6) - 2023-02-06
+## [math/v1.0.0-beta.6](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.0.0-beta.6) - 2023-02-06
 
 ### Features
 
-* [#14760](https://github.com/cosmos/cosmos-sdk/issues/14760) add collections key encoders and value encoders for common types.
-* [#14166](https://github.com/cosmos/cosmos-sdk/issues/14166) math: add generics versions of Max, Min to cater to all numeric types
-* [#13381](https://github.com/cosmos/cosmos-sdk/issues/13381) add uint `IsNil` method
+* [#14760](https://github.com/cosmos/cosmos-sdk/v2/issues/14760) add collections key encoders and value encoders for common types.
+* [#14166](https://github.com/cosmos/cosmos-sdk/v2/issues/14166) math: add generics versions of Max, Min to cater to all numeric types
+* [#13381](https://github.com/cosmos/cosmos-sdk/v2/issues/13381) add uint `IsNil` method
 
 ### Improvements
 
-* [#14010](https://github.com/cosmos/cosmos-sdk/issues/14010) math: optimize and test FormatInt + simplify LegacyNewDecFromStr
-* [#12794](https://github.com/cosmos/cosmos-sdk/issues/12794) math: precompute & use square of precisionReuse instead of 2 repeated computations
+* [#14010](https://github.com/cosmos/cosmos-sdk/v2/issues/14010) math: optimize and test FormatInt + simplify LegacyNewDecFromStr
+* [#12794](https://github.com/cosmos/cosmos-sdk/v2/issues/12794) math: precompute & use square of precisionReuse instead of 2 repeated computations
 
 ### Bug Fixes
 
-* [#14691](https://github.com/cosmos/cosmos-sdk/issues/14691) do not flatten events attributes by event types
-* [#14252](https://github.com/cosmos/cosmos-sdk/issues/14252) math: add LegacyNewDecFromStr fuzzers + remove unnecessary error wrapping
+* [#14691](https://github.com/cosmos/cosmos-sdk/v2/issues/14691) do not flatten events attributes by event types
+* [#14252](https://github.com/cosmos/cosmos-sdk/v2/issues/14252) math: add LegacyNewDecFromStr fuzzers + remove unnecessary error wrapping
 
 ### Testing
 
-* [#14576](https://github.com/cosmos/cosmos-sdk/issues/14576) Added test cases for precisionMultiplier
+* [#14576](https://github.com/cosmos/cosmos-sdk/v2/issues/14576) Added test cases for precisionMultiplier
 
-## [math/v1.0.0-beta.3](https://github.com/cosmos/cosmos-sdk/releases/tag/math/v1.0.0-beta.3) - 2022-07-20
+## [math/v1.0.0-beta.3](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/math/v1.0.0-beta.3) - 2022-07-20
 
 ### Bug Fixes
 
-* [#11996](https://github.com/cosmos/cosmos-sdk/issues/11996) math: fix Uint.Unmarshal's lack of negative value checking
+* [#11996](https://github.com/cosmos/cosmos-sdk/v2/issues/11996) math: fix Uint.Unmarshal's lack of negative value checking
 
 <!-- generated by git-cliff -->

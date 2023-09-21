@@ -9,11 +9,11 @@ import (
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	banktestutil "github.com/cosmos/cosmos-sdk/v2/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/keeper"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/testutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 func TestUnbondingDelegationsMaxEntries(t *testing.T) {

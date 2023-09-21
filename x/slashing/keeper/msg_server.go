@@ -5,9 +5,9 @@ import (
 
 	"cosmossdk.io/errors"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	govtypes "github.com/cosmos/cosmos-sdk/v2/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/v2/x/slashing/types"
 )
 
 var _ types.MsgServer = msgServer{}

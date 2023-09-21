@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/evidence/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/v2/client"
 )
 
 // GetTxCmd returns a CLI command that has all the native evidence module tx

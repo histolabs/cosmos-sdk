@@ -8,11 +8,11 @@ import (
 
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/runtime"
+	"github.com/cosmos/cosmos-sdk/v2/server"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

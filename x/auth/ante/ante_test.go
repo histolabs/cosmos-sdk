@@ -14,16 +14,16 @@ import (
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/ed25519"
+	kmultisig "github.com/cosmos/cosmos-sdk/v2/crypto/keys/multisig"
+	"github.com/cosmos/cosmos-sdk/v2/crypto/keys/secp256k1"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v2/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v2/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v2/types/errors"
+	"github.com/cosmos/cosmos-sdk/v2/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v2/x/auth/ante"
+	authtypes "github.com/cosmos/cosmos-sdk/v2/x/auth/types"
 )
 
 // Test that simulate transaction accurately estimates gas cost
@@ -1200,7 +1200,7 @@ func generatePubKeysAndSignatures(n int, msg []byte, _ bool) (pubkeys []cryptoty
 		var privkey cryptotypes.PrivKey = secp256k1.GenPrivKey()
 
 		// TODO: also generate ed25519 keys as below when ed25519 keys are
-		//  actually supported, https://github.com/cosmos/cosmos-sdk/issues/4789
+		//  actually supported, https://github.com/cosmos/cosmos-sdk/v2/issues/4789
 		// for now this fails:
 		// if rand.Int63()%2 == 0 {
 		//	privkey = ed25519.GenPrivKey()

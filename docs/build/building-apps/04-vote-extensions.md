@@ -40,7 +40,7 @@ other validators when validating their pre-commits. For a given vote extension,
 this process MUST be deterministic. The Cosmos SDK defines `sdk.VerifyVoteExtensionHandler`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/types/abci.go#L26-L27
+https://github.com/cosmos/cosmos-sdk/v2/blob/v0.50.0-alpha.0/types/abci.go#L26-L27
 ```
 
 An application can set this handler in `app.go` via the `baseapp.SetVerifyVoteExtensionHandler`
@@ -64,7 +64,7 @@ is just a slice of byte slices.
 
 `FinalizeBlock` will ignore any byte slice that doesn't implement an `sdk.Tx` so
 any injected vote extensions will safely be ignored in `FinalizeBlock`. For more
-details on propagation, see the [ABCI++ 2.0 ADR](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-064-abci-2.0.md#vote-extension-propagation--verification).
+details on propagation, see the [ABCI++ 2.0 ADR](https://github.com/cosmos/cosmos-sdk/v2/blob/main/docs/architecture/adr-064-abci-2.0.md#vote-extension-propagation--verification).
 
 ### Recovery of injected Vote Extensions
 

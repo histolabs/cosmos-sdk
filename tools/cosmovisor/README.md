@@ -48,7 +48,7 @@ Release branches have the following format `release/cosmovisor/vA.B.x`, where A 
 
 ### Installation
 
-You can download Cosmovisor from the [GitHub releases](https://github.com/cosmos/cosmos-sdk/releases/tag/cosmovisor%2Fv1.5.0).
+You can download Cosmovisor from the [GitHub releases](https://github.com/cosmos/cosmos-sdk/v2/releases/tag/cosmovisor%2Fv1.5.0).
 
 To install the latest version of `cosmovisor`, run the following command:
 
@@ -345,7 +345,7 @@ Update app to the latest version (e.g. v0.50.0).
 
 :::note
 
-Migration plans are defined using the `x/upgrade` module and described in [In-Place Store Migrations](https://github.com/cosmos/cosmos-sdk/blob/main/docs/docs/core/15-upgrade.md). Migrations can perform any deterministic state change.
+Migration plans are defined using the `x/upgrade` module and described in [In-Place Store Migrations](https://github.com/cosmos/cosmos-sdk/v2/blob/main/docs/docs/core/15-upgrade.md). Migrations can perform any deterministic state change.
 
 The migration plan to upgrade the simapp from v0.47 to v0.50 is defined in `simapp/upgrade.go`.
 

@@ -12,13 +12,13 @@ import (
 
 	cfg "github.com/cometbft/cometbft/config"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkruntime "github.com/cosmos/cosmos-sdk/runtime"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankexported "github.com/cosmos/cosmos-sdk/x/bank/exported"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v2/client"
+	"github.com/cosmos/cosmos-sdk/v2/codec"
+	sdkruntime "github.com/cosmos/cosmos-sdk/v2/runtime"
+	sdk "github.com/cosmos/cosmos-sdk/v2/types"
+	bankexported "github.com/cosmos/cosmos-sdk/v2/x/bank/exported"
+	"github.com/cosmos/cosmos-sdk/v2/x/genutil/types"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v2/x/staking/types"
 )
 
 // GenAppStateFromConfig gets the genesis app state from the config
@@ -95,7 +95,7 @@ func CollectTxs(cdc codec.JSONCodec, txJSONDecoder sdk.TxDecoder, moniker, genTx
 	// addresses and IPs (and port) validator server info
 	var addressesIPs []string
 
-	// TODO (https://github.com/cosmos/cosmos-sdk/issues/17815):
+	// TODO (https://github.com/cosmos/cosmos-sdk/v2/issues/17815):
 	// Examine CPU and RAM profiles to see if we can parsing
 	// and ValidateAndGetGenTx concurrent.
 	for _, fo := range fos {
