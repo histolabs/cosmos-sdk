@@ -2,7 +2,7 @@ go 1.21
 
 toolchain go1.21.0
 
-module github.com/cosmos/cosmos-sdk
+module github.com/cosmos/cosmos-sdk/v2
 
 require (
 	cosmossdk.io/api v0.7.1
@@ -179,18 +179,4 @@ replace (
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.9.1
 	// replace broken goleveldb
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
-)
-
-retract (
-	// revert fix https://github.com/cosmos/cosmos-sdk/pull/16331
-	v0.46.12
-	// subject to a bug in the group module and gov module migration
-	[v0.46.5, v0.46.6]
-	// subject to the dragonberry vulnerability
-	// and/or the bank coin metadata migration issue
-	[v0.46.0, v0.46.4]
-	// subject to the dragonberry vulnerability
-	[v0.45.0, v0.45.8]
-	// do not use
-	v0.43.0
 )
