@@ -59,13 +59,13 @@ of storage and not in the value leading to both a flexible data model and effici
 To define a table:
 
 1) create a .proto file to describe the module's state (naming it `state.proto` is recommended for consistency),
-and import "cosmos/orm/v1/orm.proto", ex:
+and import "cowsmouse/orm/v1/orm.proto", ex:
 
 ```protobuf
 syntax = "proto3";
 package bank_example;
 
-import "cosmos/orm/v1/orm.proto";
+import "cowsmouse/orm/v1/orm.proto";
 ```
 
 2) define a `message` for the table, ex:

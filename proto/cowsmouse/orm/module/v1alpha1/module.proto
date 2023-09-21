@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package cowsmouse.orm.module.v1alpha1;
+
+import "cowsmouse/app/v1alpha1/module.proto";
+
+// Module defines the ORM module which adds providers to the app container for
+// ORM ModuleDB's and in the future will automatically register query
+// services for modules that use the ORM.
+message Module {
+  option (cowsmouse.app.v1alpha1.module) = {
+    go_import: "cosmossdk.io/orm"
+  };
+}

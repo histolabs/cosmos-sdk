@@ -2,7 +2,7 @@
 syntax = "proto3";
 package testpb;
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "cowsmouse/base/query/v1beta1/pagination.proto";
 import "google/protobuf/duration.proto";
 import "google/protobuf/timestamp.proto";
 import "testpb/test_schema.proto";
@@ -139,7 +139,7 @@ message ListExampleTableRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -158,7 +158,7 @@ message ListExampleTableResponse {
   // values are the results of the query.
   repeated ExampleTable values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetExampleAutoIncrementTableRequest is the TestSchemaQuery/GetExampleAutoIncrementTableRequest request type.
@@ -216,7 +216,7 @@ message ListExampleAutoIncrementTableRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -235,7 +235,7 @@ message ListExampleAutoIncrementTableResponse {
   // values are the results of the query.
   repeated ExampleAutoIncrementTable values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetExampleSingletonRequest is the TestSchemaQuery/GetExampleSingletonRequest request type.
@@ -291,7 +291,7 @@ message ListExampleTimestampRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -310,7 +310,7 @@ message ListExampleTimestampResponse {
   // values are the results of the query.
   repeated ExampleTimestamp values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetExampleDurationRequest is the TestSchemaQuery/GetExampleDurationRequest request type.
@@ -358,7 +358,7 @@ message ListExampleDurationRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -377,7 +377,7 @@ message ListExampleDurationResponse {
   // values are the results of the query.
   repeated ExampleDuration values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetSimpleExampleRequest is the TestSchemaQuery/GetSimpleExampleRequest request type.
@@ -435,7 +435,7 @@ message ListSimpleExampleRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -454,7 +454,7 @@ message ListSimpleExampleResponse {
   // values are the results of the query.
   repeated SimpleExample values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetExampleAutoIncFieldNameRequest is the TestSchemaQuery/GetExampleAutoIncFieldNameRequest request type.
@@ -494,7 +494,7 @@ message ListExampleAutoIncFieldNameRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -513,5 +513,5 @@ message ListExampleAutoIncFieldNameResponse {
   // values are the results of the query.
   repeated ExampleAutoIncFieldName values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }

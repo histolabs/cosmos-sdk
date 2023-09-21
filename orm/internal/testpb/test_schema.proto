@@ -4,11 +4,11 @@ package testpb;
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
-import "cosmos/orm/v1/orm.proto";
+import "cowsmouse/orm/v1/orm.proto";
 
 message ExampleTable {
   // clang-format off
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 1;
     primary_key: {
       fields:
@@ -76,7 +76,7 @@ enum Enum {
 }
 
 message ExampleAutoIncrementTable {
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 3
     primary_key: {fields: "id" auto_increment: true}
     index: {id: 1 fields: "x" unique: true}
@@ -88,7 +88,7 @@ message ExampleAutoIncrementTable {
 }
 
 message ExampleSingleton {
-  option (cosmos.orm.v1.singleton) = {
+  option (cowsmouse.orm.v1.singleton) = {
     id: 2
   };
   string foo = 1;
@@ -96,7 +96,7 @@ message ExampleSingleton {
 }
 
 message ExampleTimestamp {
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 4
     primary_key: {fields: "id" auto_increment: true}
     index: {id: 1 fields: "ts"}
@@ -108,7 +108,7 @@ message ExampleTimestamp {
 }
 
 message ExampleDuration {
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 4
     primary_key: {fields: "id" auto_increment: true}
     index: {id: 1 fields: "dur"}
@@ -120,7 +120,7 @@ message ExampleDuration {
 }
 
 message SimpleExample {
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 5
     primary_key: {fields: "name"}
     index: {id: 1, fields: "unique", unique: true}
@@ -133,7 +133,7 @@ message SimpleExample {
 
 // ExampleAutoIncFieldName is a table for testing InsertReturning<FieldName>.
 message ExampleAutoIncFieldName {
-  option (cosmos.orm.v1.table) = {
+  option (cowsmouse.orm.v1.table) = {
     id: 6
     primary_key: {fields: "foo" auto_increment: true}
   };

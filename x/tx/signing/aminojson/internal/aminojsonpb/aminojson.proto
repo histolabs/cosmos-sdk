@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 import "amino/amino.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "cowsmouse/base/v1beta1/coin.proto";
 import "google/protobuf/any.proto";
 
 // AminoSignFee is the legacy amino json sign mode compatible version of txv1beta1.Fee, and differs from that message
 // by the name of the Gas field (GasLimit in txv1beta.Fee).
 // Note: this is only used for signing, see x/tx/signing/aminojson.go for more details.
 message AminoSignFee {
-  repeated cosmos.base.v1beta1.Coin amount  = 1 [(amino.dont_omitempty) = true, (amino.encoding) = "legacy_coins"];
-  uint64                            gas     = 2 [(amino.dont_omitempty) = true];
-  string                            payer   = 3;
-  string                            granter = 4;
+  repeated cowsmouse.base.v1beta1.Coin amount  = 1 [(amino.dont_omitempty) = true, (amino.encoding) = "legacy_coins"];
+  uint64                               gas     = 2 [(amino.dont_omitempty) = true];
+  string                               payer   = 3;
+  string                               granter = 4;
 }
 
 // AminoSignDoc is a message container used to generate the SIGN_MODE_LEGACY_AMINO_JSON sign bytes with proto3 API.

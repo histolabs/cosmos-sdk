@@ -22,7 +22,7 @@ Here is an example module configuration message for the `auth` module:
 ```protobuf
 package cosmos.auth.module.v1;
 
-import "cosmos/app/v1alpha1/module.proto";
+import "cowsmouse/app/v1alpha1/module.proto";
 
 message Module {
   option (cosmos.app.v1alpha1.module) = {

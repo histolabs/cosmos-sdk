@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package testpb;
 
-import "cosmos/msg/v1/msg.proto";
+import "cowsmouse/msg/v1/msg.proto";
 import "gogoproto/gogo.proto";
 import "amino/amino.proto";
 import "cosmos_proto/cosmos.proto";
@@ -42,7 +42,7 @@ message TestNullableFields {
 
 message IntAsString {
   string int_as_string = 1 [
-    (cosmos_proto.scalar)  = "cosmos.Int",
+    (cosmos_proto.scalar)  = "cowsmouse.Int",
     (gogoproto.customtype) = "cosmossdk.io/math.Int",
     (amino.dont_omitempty) = true,
     (gogoproto.nullable)   = false
@@ -51,7 +51,7 @@ message IntAsString {
 
 message IntAsBytes {
   bytes int_as_bytes = 1 [
-    (cosmos_proto.scalar)  = "cosmos.Int",
+    (cosmos_proto.scalar)  = "cowsmouse.Int",
     (gogoproto.customtype) = "cosmossdk.io/math.Int",
     (amino.dont_omitempty) = true,
     (gogoproto.nullable)   = false
@@ -59,7 +59,7 @@ message IntAsBytes {
 }
 
 service IntegrationTxTestMsg {
-  option (cosmos.msg.v1.service) = true;
+  option (cowsmouse.msg.v1.service) = true;
 
   rpc TestFields(TestRepeatedFields) returns (TestRepeatedFields) {}
 }

@@ -2,7 +2,7 @@
 syntax = "proto3";
 package testpb;
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "cowsmouse/base/query/v1beta1/pagination.proto";
 import "testpb/bank.proto";
 
 // BankQueryService queries the state of the tables specified by testpb/bank.proto.
@@ -67,7 +67,7 @@ message ListBalanceRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -86,7 +86,7 @@ message ListBalanceResponse {
   // values are the results of the query.
   repeated Balance values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }
 
 // GetSupplyRequest is the BankQuery/GetSupplyRequest request type.
@@ -126,7 +126,7 @@ message ListSupplyRequest {
     RangeQuery range_query = 2;
   }
   // pagination specifies optional pagination parameters.
-  cosmos.base.query.v1beta1.PageRequest pagination = 3;
+  cowsmouse.base.query.v1beta1.PageRequest pagination = 3;
 
   // RangeQuery specifies the from/to index keys for a range query.
   message RangeQuery {
@@ -145,5 +145,5 @@ message ListSupplyResponse {
   // values are the results of the query.
   repeated Supply values = 1;
   // pagination is the pagination response.
-  cosmos.base.query.v1beta1.PageResponse pagination = 2;
+  cowsmouse.base.query.v1beta1.PageResponse pagination = 2;
 }

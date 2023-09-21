@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/tx/v1beta1/tx.proto";
+import "cowsmouse/base/v1beta1/coin.proto";
+import "cowsmouse/tx/v1beta1/tx.proto";
 import "cosmos_proto/cosmos.proto";
 import "google/protobuf/any.proto";
 
@@ -74,12 +74,12 @@ message Envelope {
   google.protobuf.Any public_key                              = 5;
   repeated google.protobuf.Any message                        = 6;
   string                       memo                           = 7;
-  repeated cosmos.base.v1beta1.Coin fees                      = 8;
-  string                            fee_payer                 = 9;
-  string                            fee_granter               = 10;
-  uint64                            gas_limit                 = 13;
-  uint64                            timeout_height            = 14;
-  repeated cosmos.tx.v1beta1.SignerInfo other_signer          = 15;
+  repeated cowsmouse.base.v1beta1.Coin fees                   = 8;
+  string                               fee_payer              = 9;
+  string                               fee_granter            = 10;
+  uint64                               gas_limit              = 13;
+  uint64                               timeout_height         = 14;
+  repeated cowsmouse.tx.v1beta1.SignerInfo other_signer       = 15;
   repeated google.protobuf.Any extension_options              = 16;
   repeated google.protobuf.Any non_critical_extension_options = 17;
   string                       hash_of_raw_bytes              = 18;

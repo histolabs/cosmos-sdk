@@ -2,28 +2,28 @@ syntax = "proto3";
 
 package testpb;
 
-import "cosmos/app/v1alpha1/module.proto";
+import "cowsmouse/app/v1alpha1/module.proto";
 
 message TestRuntimeModule {
-  option (cosmos.app.v1alpha1.module) = {
+  option (cowsmouse.app.v1alpha1.module) = {
     go_import: "cosmossdk.io/core/internal/testpb"
   };
 }
 
 message TestModuleA {
-  option (cosmos.app.v1alpha1.module) = {
+  option (cowsmouse.app.v1alpha1.module) = {
     go_import: "cosmossdk.io/core/internal/testpb"
   };
 }
 
 message TestModuleB {
-  option (cosmos.app.v1alpha1.module) = {
+  option (cowsmouse.app.v1alpha1.module) = {
     go_import: "cosmossdk.io/core/internal/testpb"
   };
 }
 
 message TestUnregisteredModule {
-  option (cosmos.app.v1alpha1.module) = {
+  option (cowsmouse.app.v1alpha1.module) = {
     go_import: "cosmossdk.io/core/internal/testpb"
   };
 }
@@ -31,6 +31,6 @@ message TestUnregisteredModule {
 message TestNoModuleOptionModule {}
 
 message TestNoGoImportModule {
-  option (cosmos.app.v1alpha1.module) = {
+  option (cowsmouse.app.v1alpha1.module) = {
   };
 }
